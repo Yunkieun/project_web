@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>글꼴 크기</title>
+        <style>
+            *{margin: 0;} /* 모든 문자들을 붙이고 싶을때 */
+            .head2{
+                font-size: 32px;
+            }
+            .head3{
+                font-size: 2em;
+            }
+            .text2{
+                font-size: 16px;
+            }
+            .text3{
+                font-size: 1.2em; /* 1em = 16px, 0.1em=16x0.1px */
+            }
+            .msg{
+                width: 300px;
+                line-height: 1.5; /* 글자 반자, 2이면 한글자 */
+                margin: 8px;
+            }
+            #box{
+                width: 200px;
+                height: 100px;
+                /* border: 1px solid #f0f; */
+                background-color: #f0f;
+                /* top-right-bottom-left */
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="head1">HTML</h1>
+        <h1 class="head2">HTML</h1>
+        <h1 class="head3">HTML</h1>
+
+        <hr>
+        <p class="text1">봄이 온다</p>
+        <p class="text2">봄이 온다</p>
+        <p class="text3">봄이 온다</p>
+
+        <hr>
+        <p class="msg">오늘은 화요일입니다. 여기는 웹 개발자 과정을 수업하고 있습니다.
+            오늘도 화이팅입니다.
+        </p>
+
+        <div id="box"></div>
+    </body>
+</html>
