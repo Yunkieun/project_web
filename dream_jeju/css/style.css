@@ -18,6 +18,15 @@ nav #topMenu{list-style: none;}
 #topMenu li a:hover{color: #2fb2fd;}
 
 /* main 영역 스타일 */
+
+h1{font-size: 35px;}
+h2{color: #00f;}
+
+
+
+
+
+
 #contents section{margin: 30px 10px;}
 section div{margin: 10px;}
 section p{line-height: 2;}
