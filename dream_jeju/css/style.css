@@ -18,18 +18,10 @@ nav #topMenu{list-style: none;}
 #topMenu li a:hover{color: #2fb2fd;}
 
 /* main 영역 스타일 */
-
-h1{font-size: 35px;}
-h2{color: #00f;}
-
-
-
-
-
-
 #contents section{margin: 30px 10px;}
 section div{margin: 10px;}
 section p{line-height: 2;}
+
 /* section의 높이를 지정해줌 */
 #healing, #activity{height: 300px;}
 #healing img, #activity img{float: left; margin-right: 20px;
@@ -69,7 +61,22 @@ footer #bottomMenu{list-style: none; padding: 20px;}
 #board #tbl_board{border: 1.5px solid rgb(2, 154, 2);
     border-collapse: collapse; width: 700px; margin: 0 auto 50px;}
 #tbl_board thead{background-color: beige;}
-#tbl_board td:nth-child(1){width: 50px;}
+#tbl_board td:nth-child(1){width: 50px; text-align: center;}
      td:nth-child(3),td:nth-child(4){text-align: center;}
 .btn{text-align: right; margin-right: 250px;}
-.btn button{padding: 10px 15px;}
+.btn button{padding: 10px 15px;}    
+
+/* register 스타일 */
+#register h2{margin: 30px 10px; text-align: center;}
+#register #tbl_write{
+    border: solid #ccc;
+    border-collapse: collapse; width: 700px; margin: 0 auto 10px;
+}
+#tbl_write input{
+}
+
+/* about me 스타일 */
+#profile h1{margin: 30px 30px; text-align: center;}
+#profile img{float: left; margin-right: 20px;
+    border-radius: 10px;}
+#career h2{margin-top: 70px;}
