@@ -18,9 +18,14 @@
            /* transition-property: width, height;
            transition-duration: 1s,2s; */
            /* 한 번에 속성 설정 - 콤마로 구분 */
-           transition: width,height,background-color,1s,2s,0.5s;
+           /* transition: width,height,background-color,1s,2s,0.5s; */
            /* 모든 속성에 대해 시간을 똑같이 설정 */
-           /* transition: all 0.5s; */
+           transition: all 2s ease-out;
+           /* 
+              ease-in : 느리게 시작
+              ease-out : 느리게 끝남
+              ease-in-out : 느리게 시작하고 느리게 끝남
+           */
         }
         .tr:hover{
             width: 200px;

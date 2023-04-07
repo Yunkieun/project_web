@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 속성</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #222;
+            margin: 50px;
+            float: left;
+        }
+        #box1{
+            background-color: azure;
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation: shape 3s infinite */
+        }
+        #box2{
+            background-color: pink;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation: rotate 2s infinite */
+        }
+
+        @keyframes shape {
+            from{
+                border: 1px solid #222;
+            }
+            to{
+                border: 1px solid #222;
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(45deg);
+            }
+            to{
+                transform: rotate(90deg);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
