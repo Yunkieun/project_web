@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 전체 스타일 */
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Noto+Sans+KR:wght@500&display=swap");
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 100%;}
+
+/* header 스타일 */
+header{width: 100%; height: 250px;}
+nav{width: 100%; height: 50px; background: #222; position: fixed; top: 0}
+#logo{float:left; line-height: 50px; padding-left: 10px;}
+#logo h2{font-family: Merienda;}
+.ct{color: rgb(44, 149, 163); animation: ct 3s infinite;}
+@keyframes ct {
+    25% {color: greenyellow;}
+    50% {color: pink;}
+    75% {color: orange;}
+}
+#logo a:link, a:visited{text-decoration:none; }
+#main-nav{float:left; list-style: none; margin-left: 20px; font-size: 0.9em;}
+#main-nav li{display: inline-block; margin: 15px; }
+#main-nav li a:link, a:visited{text-decoration: none; color:white; }
+#main-nav li a:hover{color: rgb(176, 236, 97);}
+#main-pic img{width:100%; height: 240px;}
+
+
+section{height: 300px; padding: 10px 5%;}
+section:nth-child(2n+1){background: rgb(245, 245, 245);}
+section .page-title{padding: 10px}
+.content .photo{display: none;}
+.content .text h3{padding:20px 10px 20px 20px; color: #222; }
+.content .text p{line-height: 2em; padding-top:10px; font-size: 0.9em; padding-left:20px}
+.content .text ul{margin-left: 10px;}
+.content .text .work{margin-left: 40px;}
+.content .text li{margin: 10px; font-size: 0.9em;}
+.content #career{padding-left: 20px;}
+.content #career li{margin: 15px;}
+.content #career li:first-child{ color: firebrick;}
+.content #career li:nth-child(2){ color: firebrick;}
+.content #link{padding-left: 20px;}
+.content #link li{margin: 15px;}
+.content #link li:last-child{ color: firebrick;}
+.content #link li a{text-decoration: none; color:rgb(100, 100, 250);}
+.content #link li a:hover{text-decoration: underline; color: rgb(100, 100, 250);}
+
+/* footer 스타일 */
+footer{height: 100px; border-top: 2px solid #aaa;}
+#bottomMenu{margin: 10px 30px;}
+#bottomMenu ul{list-style: none;}
+#bottomMenu ul li{display: inline; padding: 0 10px;
+            border-right: 2px solid #ccc; font-size: 0.9em;}
+#bottomMenu ul li:last-child{border:none}
+#bottomMenu ul li a{text-decoration: none; color: firebrick;}
+#bottomMenu ul li a:hover{text-decoration: underline; color: firebrick;}
+
+/* 태블릿 기준 - 768px 이상 */
+@media screen and (min-width: 768px) {
+    header{width: 100%; height: 300px;}
+    nav{width: 100%; height: 60px; background: #006bc2; position: fixed; top: 0;}
+    #logo{float:left; line-height: 60px; padding-left: 20px;}
+    #main-nav{float:right; list-style: none; text-align: center; margin-right: 100px;}
+    #main-nav li{display: inline-block; margin: 17px; font-size:0.9em}
+    #main-pic img{width:100%; height: 290px;}
+    section{height: 350px; padding: 10px 5%;}
+    #who, #job{float:left; width: 50%; box-sizing: border-box; border:1px dotted #eee;}
+    #skill{clear:both; height: 350px;}
+}
+
+/* PC 기준 - 996px 이상 */
+@media screen and (min-width: 996px) {
+    #container{width:996px; margin:0 auto; border: 1px solid #eee;}
+    header{width: 100%; height: 320px;}
+    nav{width: 996px; height: 60px; background: #222; position: fixed; top: 0}
+    #logo{float:left; line-height: 60px; padding-left: 20px;}
+    #main-nav{float:right; list-style: none; text-align: center; margin-right: 100px;}
+    #main-nav li{display: inline-block; margin: 17px; font-size:0.9em}
+    #main-pic img{width:996px; height: 310px;}
+    section{height: 350px;}
+    .content .text .work{margin-left: 260px;}
+    #who, #job, #skill{width: 100%; padding: 10px 5%;}
+    #who .photo{float: left; display: block; margin: 10px 20px; }
+    #who .photo img{border-radius: 15px;}
+    #skill .photo{float: right; display: block; margin-right: 15%;}
+    #skill .photo img{border-radius: 15px;}
+}

@@ -15,6 +15,7 @@ header{width: 100%; height: 100px; background: rgb(0, 0, 54);}
 /* 주메뉴 */
 nav{float: right; width: 900px; height: 100px; padding-top: 40px;}
 #topMenu{height: 60px;}
+/* '>' 자식 선택자 */
 #topMenu > li{float: left; position: relative;}
 #topMenu > li > a{display: block; color: #fff; padding: 20px 60px;}
 
@@ -25,3 +26,23 @@ nav{float: right; width: 900px; height: 100px; padding-top: 40px;}
 #topMenu > li > ul > li{padding: 10px 10px 10px 30px;}
 #topMenu > li > ul > li > a{font-size: 14px; padding: 10px; color: #000;}
 #topMenu > li > ul > li > a:hover{color: red;}
+
+/* 탭 메뉴 */
+#contents{width: 100%; height: 800px; margin-top: 100px;}
+#tabMenu{width: 600px; height: 100%; margin: 0 auto;}
+#tabMenu input[type='radio']{display: none;}
+#tabMenu label{display: inline-block; padding: 15px 25px; color: #ccc;}
+#tabMenu label:hover{color: #222; cursor: pointer;}
+#tabMenu input:checked + label{
+      color: #b00; border: 1px solid #ddd; background: #eee;
+      border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+.tabContent{padding: 20px 0 20px 0; border-top: 1px solid #ddd; display: none;}
+/* h2 주석 역할 */
+.tabContent h2{display: none;}
+/* 멀리 있는 형제 '~' 틸드 */
+#tab1:checked ~ #notice{display: block;}
+#tab2:checked ~ #gallery{display: block;}
+#notice ul{list-style: square; margin-left: 30px;}
+#notice ul li{line-height: 2.5;}
+#gallery ul li{display: inline;}
